@@ -12,7 +12,7 @@ function Home() {
     const [totalPrice, setTotalPrice] = useState(0);
 
     useEffect(() => {
-        fetch('data.json')
+        fetch('./data.json')
             .then(res => res.json())
             .then(data => setCoursesData(data))
     }, []);
